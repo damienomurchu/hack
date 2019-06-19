@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Latest Flicks</string>
+    <string name="error_message">Error displaying movies</string>
+    <string name="iv_description_movie_backdrop">Movie Backdrop</string>
+    <string name="tv_movie_name">Movie-Name</string>
+    <string name="tv_movie_rating">Rating</string>
+    <string name="tv_movie_release_date">Movie-Release-Date</string>
+    <string name="tv_movie_overview">Movie-Overview</string>
+    <string name="iv_description_movie_poster">Movie Poster</string>
+    <string name="rating_format">(%1$s)</string>
+    <string name="date_format">(%1$s)</string>
+    <string name="popularity">Popularity</string>
+    <string name="rating">Rating</string>
+</resources>

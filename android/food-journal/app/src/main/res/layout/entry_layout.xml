@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/cardTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/cardLeft"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_begin="16dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/cardRight"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintGuide_end="16dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/cardBottom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_end="16dp" />
+
+    <TextView
+        android:id="@+id/timeDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/timePlaceholder"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/cardLeft"
+        app:layout_constraintTop_toBottomOf="@id/cardTop"
+
+        />
+
+    <TextView
+        android:id="@+id/hungerLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/ratingPlaceholder"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@id/timeDate"
+
+        app:layout_constraintTop_toBottomOf="@id/cardTop" />
+
+    <TextView
+        android:id="@+id/stressLevel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/ratingPlaceholder"
+        android:textSize="16sp"
+
+        app:layout_constraintStart_toEndOf="@id/timeDate"
+        app:layout_constraintTop_toBottomOf="@id/hungerLevel" />
+
+    <TextView
+        android:id="@+id/foodItems"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/foodItemsPlaceholder"
+        android:textSize="16sp"
+
+        app:layout_constraintStart_toEndOf="@id/hungerLevel"
+        app:layout_constraintTop_toBottomOf="@id/cardTop" />
+
+    <TextView
+        android:id="@+id/immediateSatisfaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/ratingPlaceholder"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toStartOf="@id/cardRight"
+
+        app:layout_constraintTop_toBottomOf="@id/cardTop" />
+
+    <TextView
+        android:id="@+id/actualSatisfaction"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginLeft="8dp"
+        android:text="@string/ratingPlaceholder"
+        android:textSize="16sp"
+
+        app:layout_constraintEnd_toStartOf="@id/cardRight"
+        app:layout_constraintTop_toBottomOf="@id/immediateSatisfaction" />
+
+
+</android.support.constraint.ConstraintLayout>
