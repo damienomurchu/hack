@@ -1,0 +1,30 @@
+{
+  "name": "graphql-recipes-api",
+  "version": "0.0.1",
+  "description": "a recipe graphql api",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/damienomurchu/graphql-recipes-api.git"
+  },
+  "keywords": [
+    "api",
+    "recipes",
+    "graphql"
+  ],
+  "author": "damienomurchu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/damienomurchu/graphql-recipes-api/issues"
+  },
+  "homepage": "https://github.com/damienomurchu/graphql-recipes-api#readme",
+  "dependencies": {
+    "express": "^4.16.3",
+    "express-graphql": "^0.6.12",
+    "graphql": "^0.13.2"
+  }
+}
