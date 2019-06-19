@@ -1,0 +1,9 @@
+.image {
+  position: fixed;
+  left: 0;
+
+  /* Preserve aspect ratio */
+  min-width: 100%;
+
+  opacity: 0.75;
+}

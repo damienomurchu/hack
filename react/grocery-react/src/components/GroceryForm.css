@@ -1,0 +1,12 @@
+.formModal {
+  margin: 3em;
+}
+
+Row {
+  border-bottom: 5em;
+}
+
+.formButton {
+  float: right;
+  color: #ffffff;
+}

@@ -1,0 +1,23 @@
+.welcomeModal {
+  background-color: #00d44e;
+  color: #ffffff;
+  opacity: 0.8;
+  padding: 1.75em 2.75em;
+}
+
+h1 {
+  text-align: center;
+  padding-bottom: 0.2em;
+  font-size: 400%;
+  font-weight: bold;
+}
+
+p {
+  padding-top: 0.5em;
+  font-size: 110%;
+}
+
+.welcomeButton {
+  color: #00d44e;
+  float: right;
+}
