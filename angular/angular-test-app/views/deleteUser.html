@@ -1,0 +1,67 @@
+<div class="ui row" ng-controller="DeleteUser">
+  <div class="ui two column grid">
+
+    <div class="ui column">
+      <div class="ui selection dropdown">
+        <input type="hidden" name="user">
+        <i class="dropdown icon"></i>
+        <div class="default text">Select User</div>
+        <div class="menu">
+          <div class="item" ng-repeat="user in users" ng-click="$parent.selectedUser = user._id" value="{{user._id}}" data-value="{{user._id}}">{{user.email}}</div>
+        </div>
+      </div>
+      <button class="ui red button" ng-click="deleteUser()" >Delete</button>
+
+    </div>
+
+    <div class="ui column">
+      <div class="ui left aligned fluid category search">
+        <div class="ui icon input">
+          <input class="prompt" type="text" placeholder="Search users...">
+          <i class="search icon"></i>
+        </div>
+        <div class="results"></div>
+      </div>
+    </div>
+
+    <div>
+      <table class="ui fixed single line celled table" ng-show="true">
+        <thead>
+        <tr>
+          <th class="four wide">Name</th>
+          <th class="five wide">Location</th>
+          <th class="four wide">Email</th>
+          <th class="three wide center aligned">Phone</i></th>
+        </tr>
+        </thead>
+        <tbody>
+        <tr ng-repeat="user in users | orderBy:'location.state'">
+          <td> <img ng-src="{{ user.picture.thumbnail }}"/> {{ user.name.title | capitalise }} {{ user.name.first | capitalise }} {{ user.name.last | capitalise }} </td>
+          <td>
+            {{ user.location.street | capitalise }},<br>
+            {{ user.location.city | capitalise }},<br>
+            {{ user.location.state | capitalise }}
+          </td>
+          <td> {{ user.email }} </td>
+          <td class="center aligned">
+            {{ user.phone }},<br>
+            {{ user.cell }}
+          </td>
+        </tr>
+
+        </tbody>
+      </table>
+    </div>
+
+    <p>
+      <br>SelectedUser : {{ selectedUser }}
+    </p>
+
+  </div>
+  <script>
+    $(document).ready(function () {
+      $('.ui.dropdown').dropdown();
+    });
+  </script>
+</div>
+

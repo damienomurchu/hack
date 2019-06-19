@@ -1,0 +1,26 @@
+<table class="ui fixed single line celled table" ng-controller="UserController">
+  <thead>
+  <tr>
+    <th class="four wide">Name</th>
+    <th class="five wide">Location</th>
+    <th class="four wide">Email</th>
+    <th class="three wide center aligned">Phone</i></th>
+  </tr>
+  </thead>
+  <tbody>
+  <tr ng-repeat="user in users | orderBy:'location.state'">
+    <td> <img ng-src="{{ user.picture.thumbnail }}"/> {{ user.name.title | capitalise }} {{ user.name.first | capitalise }} {{ user.name.last | capitalise }} </td>
+    <td>
+      {{ user.location.street | capitalise }},<br>
+      {{ user.location.city | capitalise }},<br>
+      {{ user.location.state | capitalise }}
+    </td>
+    <td> {{ user.email }} </td>
+    <td class="center aligned">
+      {{ user.phone }},<br>
+      {{ user.cell }}
+    </td>
+  </tr>
+
+  </tbody>
+</table>

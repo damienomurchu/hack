@@ -1,0 +1,9 @@
+{
+  "name": "angular-test-app",
+  "version": "0.0.1",
+  "description": "A first test project for AngularJS",
+  "repository": "https://github.com/damienomurchu/angular-test-app",
+  "license": "MIT",
+  "devDependencies": {},
+  "scripts": {}
+}

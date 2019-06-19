@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <title>Users-App</title>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <link href="css/main.css" rel="stylesheet" /> <!-- main css -->
+    <script src="./js/shared/angular.min.js"></script> <!-- angular core lib -->
+    <script src="./js/shared/angular-route.min.js"></script> <!-- angular routes lib -->
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    <script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.js"></script>
+    <link rel="stylesheet" media="screen" href="//cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.1.6/semantic.min.css">
+  </head>
+
+  <body ng-app="UsersApp">
+
+    <section class="ui container">
+
+      <section class="ui center aligned padded grid">
+        <div class="ui fourteen wide column">
+          <nav class="ui menu">
+            <header class="header item"> <a href="#">Users App</a> </header>
+            <div class="right menu">
+              <a class="item" href="#findUser"><i class="search icon"></i> Find User</a>
+              <a class="item" href="#createUser"><i class="add user icon"></i> Create User</a>
+              <a class="item" href="#deleteUser"><i class="delete user icon"></i> Delete User</a>
+              <a class="item" href="#userList"><i class="users icon"></i> User List</a>
+              <!--<a class="item" href="/logout"><i class="sign out icon"></i> Logout</a>-->
+            </div>
+          </nav>
+        </div>
+      </section>
+
+      <div class="ui row">
+        <section class="ui center aligned padded grid">
+          <div class="ui fourteen wide column">
+            <ng-view></ng-view>
+          </div>
+        </section>
+      </div>
+
+    </section>
+
+
+    <!-- Modules -->
+    <script src="js/app.js"></script>
+
+    <!-- Controllers -->
+    <script src="js/controllers/UserController.js"></script>
+    <script src="js/controllers/CreateUser.js"></script>
+    <script src="js/controllers/FindUser.js"></script>
+    <script src="js/controllers/DeleteUser.js"></script>
+
+
+
+    <!-- Directives -->
+    <script src="js/directives/userList.js"></script>
+
+    <!-- Services -->
+    <script src="js/services/user.js"></script>
+
+  </body>
+
+</html>
