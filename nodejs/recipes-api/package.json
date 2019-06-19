@@ -1,0 +1,35 @@
+{
+  "name": "recipes-api",
+  "version": "0.0.1",
+  "description": "Nodejs RESTful api for recipe-related data",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./index.js",
+    "test": "./node_modules/bin/_mocha --recursive '**/*spec.js' --exit",
+    "dev": "./node_modules/.bin/nodemon ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/damienomurchu/recipes-api.git"
+  },
+  "keywords": [
+    "food",
+    "recipes",
+    "api",
+    "nodejs",
+    "hapi"
+  ],
+  "author": "Damien Murphy",
+  "license": "GPL-3.0",
+  "bugs": {
+    "url": "https://github.com/damienomurchu/recipes-api/issues"
+  },
+  "homepage": "https://github.com/damienomurchu/recipes-api#readme",
+  "dependencies": {
+    "hapi": "^17.8.1"
+  },
+  "devDependencies": {
+    "mocha": "^5.2.0",
+    "nodemon": "^1.18.9"
+  }
+}

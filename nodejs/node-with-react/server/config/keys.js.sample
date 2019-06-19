@@ -1,0 +1,4 @@
+module.exports = {
+  googleClientID: 'put-your-google-client-id-here',
+  googleClientSecret: 'put-your-google-client-secret-here'
+};
